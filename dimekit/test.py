@@ -1,1 +1,2 @@
-print('welcome!')
+def t():
+    print('welcome!')
