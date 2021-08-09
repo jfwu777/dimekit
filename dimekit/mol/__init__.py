@@ -1,1 +1,1 @@
-from .mol2_parser import str_parser
+from dimekit.mol.mol2_parser import str_parser
