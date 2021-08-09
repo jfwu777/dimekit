@@ -51,13 +51,13 @@ def _mol2_parser(file):
         span = (xmax-xmin, ymax-ymin, zmax-zmin)
     return center, span
 
-def str_parser(file, type=None):
+def str_parser(file, file_type=None):
     """
     A structure parser that supports: pdb / pdbqt / mol2
     """
-    assert type is None, "Please specify the file type"
+    assert file_type is None, "Please specify the file type"
     
-    if type == "mol2":
+    if file_type == "mol2":
         _mol2_parser(file)
     else:
         raise Exception("File type not supported")
