@@ -1,0 +1,1 @@
+from .mol2_parser import str_parser
