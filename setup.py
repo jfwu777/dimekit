@@ -17,5 +17,5 @@ setuptools.setup(
     },
     license="BSD",
     packages=["dimekit"]
-    install_requires=[],
+    # install_requires=[],
 )
