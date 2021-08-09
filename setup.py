@@ -3,6 +3,10 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
+PACKAGES = [
+    "dimekit",
+    "dimekit.mol",
+]
 setuptools.setup(
     name='dimekit',
     version='0.0.1',
@@ -16,6 +20,6 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/jfwu777/dimekit/issues"
     },
     license="BSD",
-    packages=["dimekit"]
+    packages=PACKAGES,
     # install_requires=[],
 )
