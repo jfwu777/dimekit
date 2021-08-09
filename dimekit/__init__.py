@@ -1,1 +1,1 @@
-from mol import str_parser
+from .mol import str_parser
