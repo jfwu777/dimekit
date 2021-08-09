@@ -55,9 +55,11 @@ def str_parser(file, file_type=None):
     """
     A structure parser that supports: pdb / pdbqt / mol2
     """
-    assert file_type is None, "Please specify the file type"
+    assert file_type is not None, "Please specify the file type"
     
     if file_type == "mol2":
-        _mol2_parser(file)
+        result = _mol2_parser(file)
     else:
         raise Exception("File type not supported")
+    
+    return result
