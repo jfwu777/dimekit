@@ -1,1 +1,1 @@
-from dimekit.mol import str_parser
+from dimekit.mol import str_parser, pdb2seq
